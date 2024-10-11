@@ -1,5 +1,4 @@
 asgiref==3.8.1
-ca-certificates==2024.9.24
 django==5.1
 django-tastypie==0.14.7
 expat==2.6.3
