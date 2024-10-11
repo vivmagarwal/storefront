@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ movie.title }}</h5>
+    <p class="card-text"><strong>Genre:</strong> {{ movie.genre }}</p>
+    <p class="card-text"><strong>Release Year:</strong> {{ movie.release_year }}</p>
+    <p class="card-text"><strong>Price:</strong> ${{ movie.price }}</p>
+    <p class="card-text"><strong>Number in Stock:</strong> {{ movie.number_in_stock }}</p>
+    <p class="card-text"><strong>Daily Rate:</strong> ${{ movie.daily_rate }}</p>
+  </div>
+</div>
+{% endblock %}
+
+
+
+
+{% comment %} 
+For: autocomplete
+"GET /favicon.ico HTTP/1.1" 404 2362
+(0.000) SELECT "movies_movie"."id", "movies_movie"."title", "movies_movie"."release_year", "movies_movie"."price", "movies_movie"."genre_id", "movies_movie"."number_in_stock", "movies_movie"."daily_rate", "movies_movie"."date_created" FROM "movies_movie" WHERE "movies_movie"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "movies_genre"."id", "movies_genre"."name" FROM "movies_genre" WHERE "movies_genre"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /movies/1 HTTP/1.1" 200 997
+{% endcomment %}
