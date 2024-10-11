@@ -1,7 +1,6 @@
 asgiref==3.8.1
 django==5.1
 django-tastypie==0.14.7
-expat==2.6.3
 gunicorn==22.0.0
 libffi==3.4.4
 packaging==24.1
