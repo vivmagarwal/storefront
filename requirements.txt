@@ -8,7 +8,6 @@ python-dateutil==2.9.0.post0
 python-mimeparse==2.0.0
 setuptools==75.1.0
 six==1.16.0
-sqlite==3.45.3
 sqlparse==0.4.4
 tk==8.6.14
 tzdata==2024b
